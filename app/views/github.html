@@ -1,0 +1,17 @@
+<h1>Hello Gihub</h1>
+<table>
+  <thead>
+    <tr>
+      <th width="200">Title</th>
+      <th ng-click="gc.setSort('created')">Created At</th>
+      <th width="150">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="i in gc.issues">
+      <td ng-bind="i.title"></td>
+      <td ng-bind="i.created_at"></td>
+      <td ng-bind="i.state"></td>
+    </tr>
+  </tbody>
+</table>
