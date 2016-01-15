@@ -1,7 +1,8 @@
+
 export default class TasksController {
-  constructor($http) {
-    $http.get('app/data/tasks.json').then((r) => {
-      this.tasks = r.data;
-    });
+  constructor(task) {
+    task.fetch().then((data) => {
+      this.tasks = data;
+    })
   }
 };

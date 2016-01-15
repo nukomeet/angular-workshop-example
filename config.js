@@ -15,11 +15,15 @@ System.config({
 
   map: {
     "angular": "github:angular/bower-angular@1.4.8",
+    "angular-resource": "github:angular/bower-angular-resource@1.4.8",
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "core-js": "npm:core-js@1.2.6",
     "koa": "npm:koa@1.1.2",
     "koa-common": "npm:koa-common@1.2.0",
+    "github:angular/bower-angular-resource@1.4.8": {
+      "angular": "github:angular/bower-angular@1.4.8"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },

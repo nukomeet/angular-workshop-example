@@ -1,6 +1,9 @@
 require 'sinatra'
 require 'json'
 
+set :static, true
+set :public_folder, '.'
+
 $tasks = JSON.parse(File.read(File.join('app', 'data', 'tasks.json')))
 $id = $tasks.count + 1
 
