@@ -10,14 +10,8 @@
   }
   </style>
 </head>
-<body ng-controller='TasksController as ts'>
-  <ul>
-    <li ng-repeat="t in ts.tasks">
-      <div ng-bind="t.title"></div>
-      <div ng-bind="t.created_at"></div>
-      <div ng-bind="t.state"></div>
-    </li>
-  </ul>
+<body>
+  <div ui-view></div>
 
   <script src="/jspm_packages/system.js" charset="utf-8"></script>
   <script src="/config.js" charset="utf-8"></script>

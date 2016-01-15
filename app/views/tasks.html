@@ -1,0 +1,11 @@
+<h1>Hello Tasks</h1>
+
+<a ui-sref="taskNew" class="button">Add new task</a>
+
+<ul>
+  <li ng-repeat="t in ts.tasks">
+    <div ng-bind="t.title"></div>
+    <div ng-bind="t.created_at"></div>
+    <div ng-bind="t.state"></div>
+  </li>
+</ul>

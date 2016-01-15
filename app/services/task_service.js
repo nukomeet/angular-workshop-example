@@ -6,4 +6,8 @@ export default class TaskService {
   fetch() {
     return this.resource.query().$promise
   }
+
+  save(task) {
+    return this.resource.save({}, task).$promise
+  }
 }
